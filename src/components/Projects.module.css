@@ -1,0 +1,135 @@
+.section {
+  padding: 110px 52px;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  background: #000;
+}
+
+.ey {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  color: #7fff00;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  color: #fff;
+  margin-bottom: 0.7rem;
+}
+
+.sub {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: #888;
+  line-height: 1.7;
+  margin-bottom: 3.5rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.07);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.list.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.row {
+  background: #000;
+  display: grid;
+  grid-template-columns: 52px 1fr 1fr auto;
+  align-items: center;
+  padding: 2.4rem 2rem;
+  gap: 2rem;
+  transition: background 0.2s;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.row:hover { background: #111; }
+
+.num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  color: #444;
+  letter-spacing: 0.1em;
+}
+
+.name {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 1.45rem;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.desc {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  color: #888;
+  line-height: 1.65;
+  max-width: 320px;
+}
+
+.metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.metricLine {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  color: #888;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.metricVal {
+  color: #7fff00;
+  font-weight: 500;
+}
+
+.tags {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-end;
+}
+
+.tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.58rem;
+  color: #444;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255,255,255,0.07);
+  padding: 3px 9px;
+  border-radius: 2px;
+}
+
+@media (max-width: 920px) {
+  .section { padding: 80px 24px; }
+  .row { grid-template-columns: 1fr; gap: 1rem; }
+  .tags { align-items: flex-start; flex-direction: row; flex-wrap: wrap; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .list { opacity: 1; transform: none; transition: none; }
+}
