@@ -4,21 +4,21 @@ import styles from './Projects.module.css'
 const PROJECTS = [
   {
     num: '01',
+    name: 'Eduverse-School ERP Portal ',
+    desc: 'AI-powered School ERP that streamlines academic and administrative operations through intelligent automation and AI-driven features.',
+    metrics: [],
+    tags: ['React.js', 'FastAPI', 'PostgreSQL', 'LangChain', 'Docker '],
+    github: 'https://github.com/SachinSahay/Eduverse-AI',
+  },
+  {
+    num: '02',
     name: 'MediQuery AI ',
     desc: 'Retrieval-Augmented Generation (RAG) system designed to answer medical queries accurately and concisely.',
     metrics: [],
     tags: ['Python', 'LangChain', 'FAISS', 'OpenAI API', 'FastAPI'],
     github: 'https://github.com/SachinSahay/MediQuery-AI',
   },
-  {
-    num: '02',
-    name: 'HireMind',
-    desc: 'AI interview prep platform — resume analysis, ATS scoring, voice mock interviews & personalized career roadmaps via LLMs..',
-    metrics: [
-    ],
-    tags: ['React', 'Node.js', 'LLMs', 'MongoDB'],
-    github: 'https://github.com/SachinSahay/HireMind-AI',
-  },
+
   {
     num: '03',
     name: 'MindSketch',
