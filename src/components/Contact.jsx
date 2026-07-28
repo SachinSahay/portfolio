@@ -3,7 +3,7 @@ import styles from './Contact.module.css'
 const LINKS = [
   { label: 'sachinsahay357@gmail.com', href: 'mailto:sachinsahay357@gmail.com', primary: true },
   { label: '+91 70845 18445',          href: 'tel:+917084518445' },
-  { label: 'LinkedIn',                  href: 'https://www.linkedin.com/in/sachin-sahay-5ba571254/', external: true },
+  { label: 'LinkedIn',                  href: 'https://www.linkedin.com/in/sachin-sahay-5ba571254', external: true },
   { label: 'GitHub',                    href: 'https://github.com/SachinSahay',     external: true },
 ]
 
