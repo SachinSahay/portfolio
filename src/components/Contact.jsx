@@ -20,7 +20,8 @@ export default function Contact() {
             key={label}
             href={href}
             className={`${styles.link} ${primary ? styles.primary : ''}`}
-            {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+            target={external ? "_blank" : undefined}
+            rel={external ? "noopener noreferrer" : undefined}
           >
             {label}
           </a>
