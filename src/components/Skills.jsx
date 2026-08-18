@@ -3,7 +3,7 @@ import styles from './Skills.module.css'
 
 const SKILLS = [
   { label: '// languages', items: ['C++', 'Python', 'JavaScript', 'SQL'] },
-  { label: '// frontend', items: ['HTML', 'CSS', 'TailwindCSS''React.js'] },
+  { label: '// frontend', items: ['HTML', 'CSS', 'TailwindCSS', 'React.js'] },
   { label: '// backend', items: ['Node.js', 'Express.js', 'REST API Development'] },
   { label: '// AI / GenAI', items: ['LangChain', 'RAG', 'LangGraph', 'Vector Embeddings', 'FAISS'] },
   { label: '// databases', items: ['MongoDB', 'Supabase', 'ChromaDB'] },
